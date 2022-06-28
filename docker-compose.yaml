@@ -1,0 +1,11 @@
+version: '3'
+services:
+  myservice:
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - data:/data
+    image: loldetector
+volumes:
+  data:
